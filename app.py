@@ -38,7 +38,12 @@ st.sidebar.write("Your little study corner")
 
 page = st.sidebar.radio(
     "Navigate",
-    ["🏠 Home", "📚 My Subjects", "✅ My Goals"]
+    [
+        "🏠 Home",
+        "📚 My Subjects",
+        "✅ My Goals",
+        "👩🏻 About Me"
+    ]
 )
 
 st.sidebar.divider()
@@ -144,3 +149,10 @@ elif page == "✅ My Goals":
 
     st.progress(completed / total if total else 0)
     st.write(f"✨ Completed: {completed} out of {total} goals")
+
+# About Me page
+elif page == "👩🏻 About Me":
+    st.title("🌷 A Little About Me")
+    st.write("Welcome to my little corner of the internet! 💗")
+    st.write("I'm a student exploring coding and technology.")
+
